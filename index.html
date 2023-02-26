@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script defer src="./js/app.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Code voorbeeld ML5</title>
+</head>
+<body>
+    <!-- <input aria-label="l" type="file" id="image-input">
+
+    <div id="label"></div>
+    <br />
+    
+    <button id="labelOne">Hamster</button>
+    <button id="labelTwo">Dog</button>
+    <button id="labelThree">Cat</button>
+    <button id="train">TRAIN</button> -->
+
+    <div id="result"></div>
+    <h1>Voeg een foto toe van een hamster! Als het fout is heb je pech</h1>
+    <input aria-label="l" type="file" id="imageUpload">
+<!-- 
+    <script>
+const classifier = ml5.imageClassifier('./model/model.json', modelLoaded);
+
+
+// When the model is loaded
+function modelLoaded() {
+  console.log('Model Loaded!');
+}
+
+classifier.classify(document.getElementById('image'), (err, results) => {
+  const resultDiv = document.getElementById('result');
+  const result = results[0];
+//show the result
+resultDiv.innerHTML = `I am ${Math.round(result.confidence * 100)}% sure this is  ${result.label}`;
+
+});
+
+//get the result with the highest confidence
+
+
+    </script> -->
+</body>
+</html>
